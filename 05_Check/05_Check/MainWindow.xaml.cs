@@ -24,5 +24,21 @@ namespace _05_Check
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            UIElementCollection children = mainGrid.Children;
+            StringBuilder builder = new StringBuilder();
+
+            for (int i = 0; i < children.Count; i++)
+            {
+                if (children[i] is CheckBox && (children[i] as CheckBox).IsChecked.Value)
+                {
+                    builder.Append((children[i] as CheckBox).Content + " ");
+                }
+            }
+
+            MessageBox.Show(builder.ToString());
+        }
     }
 }
