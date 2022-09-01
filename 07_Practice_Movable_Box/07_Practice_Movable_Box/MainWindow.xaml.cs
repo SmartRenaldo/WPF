@@ -24,5 +24,10 @@ namespace _07_Practice_Movable_Box
         {
             InitializeComponent();
         }
+
+        private void Grid_KeyDown(object sender, KeyEventArgs e)
+        {
+
+        }
     }
 }

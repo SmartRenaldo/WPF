@@ -5,8 +5,32 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:_07_Practice_Movable_Box"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <Grid>
+        Title="MainWindow" Height="450" Width="800" KeyDown="Grid_KeyDown">
+    <Grid ShowGridLines="True" Background="Cyan">
+        <!-- seperate grid into 3 columns -->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
 
+        <!-- seperate grid into 3 rows -->
+        <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+        </Grid.RowDefinitions>
+
+        <Border Name="b11" Grid.Row="0" Grid.Column="0"></Border>
+        <Border Name="b12" Grid.Row="0" Grid.Column="1"></Border>
+        <Border Name="b13" Grid.Row="0" Grid.Column="2"></Border>
+
+        <Border Name="b21" Grid.Row="1" Grid.Column="0"></Border>
+        <Border Name="b22" Grid.Row="1" Grid.Column="1"></Border>
+        <Border Name="b23" Grid.Row="1" Grid.Column="2"></Border>
+
+        <Border Name="b31" Grid.Row="2" Grid.Column="0"></Border>
+        <Border Name="b32" Grid.Row="2" Grid.Column="1"></Border>
+        <Border Name="b33" Grid.Row="2" Grid.Column="2"></Border>
     </Grid>
 </Window>
