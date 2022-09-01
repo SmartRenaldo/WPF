@@ -6,14 +6,17 @@
         xmlns:c="clr-namespace:_06_DataBinding.Entity"
         xmlns:local="clr-namespace:_06_DataBinding"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded">
     <Grid>
         <Grid.Resources>
+            <!-- Resource direction, key: dataSource, value: MyData -->
             <c:MyData x:Key="dataSource"/>
         </Grid.Resources>
         <Grid.DataContext>
             <Binding Source="{StaticResource dataSource}"/>
         </Grid.DataContext>
-        <Button Background="{Binding Path=Color}" Width="150" Height="50" FontWeight="Bold" FontSize="20">RED</Button>
+        <Button Background="{Binding Path=Color}" Width="{Binding Path=Width}" 
+                Height="50" FontWeight="Bold" FontSize="{Binding Path=FontSize}">RED</Button>
+        <Label Name="myTitle" Content="AWESOME" FontSize="50" FontWeight="Bold" HorizontalAlignment="Center"/>
     </Grid>
 </Window>

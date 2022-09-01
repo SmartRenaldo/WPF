@@ -1,4 +1,5 @@
-﻿using System;
+﻿using _06_DataBinding.Entity;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -23,6 +24,11 @@ namespace _06_DataBinding
         public MainWindow()
         {
             InitializeComponent();
+        }
+
+        private void Window_Loaded(object sender, RoutedEventArgs e)
+        {
+            myTitle.DataContext = new MyData() { Title = "AWESOME" };
         }
     }
 }
