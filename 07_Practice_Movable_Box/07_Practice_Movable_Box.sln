@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32811.315
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "07_Practice_Movable_Box", "07_Practice_Movable_Box\07_Practice_Movable_Box.csproj", "{4CAB64DB-7E46-4629-BAC7-A449E736E947}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{4CAB64DB-7E46-4629-BAC7-A449E736E947}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4CAB64DB-7E46-4629-BAC7-A449E736E947}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4CAB64DB-7E46-4629-BAC7-A449E736E947}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4CAB64DB-7E46-4629-BAC7-A449E736E947}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {59A32A8D-D300-4312-9B75-AB2BA1DF0859}
+	EndGlobalSection
+EndGlobal
