@@ -7,9 +7,17 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Border Width="250" Height="150" Background="Coral" BorderBrush="DarkRed" 
+        <Border Width="250" Height="150" Background="Coral" BorderBrush="DarkRed" CornerRadius="3, 3, 10, 10"
                 BorderThickness="5, 5, 5, 15">
-            <Label FontSize="24" Foreground="Azure" HorizontalAlignment="Center">Awesome</Label>
+            <Button Background="Transparent" FontSize="24" Foreground="Azure" 
+                    HorizontalAlignment="Center" Click="Button_Click" BorderThickness="0">Awesome</Button>
+
+            <!--<Grid>
+                <Label FontSize="24" Foreground="Azure" HorizontalAlignment="Center">Awesome1</Label>
+                <Label FontSize="24" Foreground="Azure" HorizontalAlignment="Center" Margin="0, 30, 0, 0">Awesome2</Label>
+                <Label FontSize="24" Foreground="Azure" HorizontalAlignment="Center" Margin="0, 60, 0, 0">Awesome3</Label>
+                <Label FontSize="24" Foreground="Azure" HorizontalAlignment="Center" Margin="0, 90, 0, 0">Awesome4</Label>
+            </Grid>-->
         </Border>
     </Grid>
 </Window>
