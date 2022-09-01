@@ -7,6 +7,12 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-
+        <RadioButton Content="Basketball" FontSize="20" Foreground="Blue" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+        <RadioButton Content="Basketball" Margin="30" FontSize="20" Foreground="Blue" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+        <RadioButton Content="Basketball" Margin="60" FontSize="20" Foreground="Blue" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+        <RadioButton Content="Basketball" Margin="90" FontSize="20" Foreground="Blue" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+        <RadioButton Content="Basketball" Margin="60, 120" FontSize="20" Foreground="Blue" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+        <RadioButton Content="Basketball" Margin="30, 150" FontSize="20" Foreground="Blue" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+        <RadioButton Content="Basketball" Margin="0, 180" FontSize="20" Foreground="Blue" VerticalAlignment="Top" HorizontalAlignment="Left"/>
     </Grid>
 </Window>
