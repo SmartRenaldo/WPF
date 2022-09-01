@@ -24,5 +24,15 @@ namespace _02_Button
         {
             InitializeComponent();
         }
+
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            MessageBox.Show("Clicked...............");
+        }
+
+        private void Button_MouseMove(object sender, MouseEventArgs e)
+        {
+            MessageBox.Show("Mouse Moved...............");
+        }
     }
 }
