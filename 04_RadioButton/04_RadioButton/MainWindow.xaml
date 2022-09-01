@@ -7,12 +7,37 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <RadioButton Content="Basketball" FontSize="20" Foreground="Blue" VerticalAlignment="Top" HorizontalAlignment="Left"/>
-        <RadioButton Content="Basketball" Margin="30" FontSize="20" Foreground="Blue" VerticalAlignment="Top" HorizontalAlignment="Left"/>
-        <RadioButton Content="Basketball" Margin="60" FontSize="20" Foreground="Blue" VerticalAlignment="Top" HorizontalAlignment="Left"/>
-        <RadioButton Content="Basketball" Margin="90" FontSize="20" Foreground="Blue" VerticalAlignment="Top" HorizontalAlignment="Left"/>
-        <RadioButton Content="Basketball" Margin="60, 120" FontSize="20" Foreground="Blue" VerticalAlignment="Top" HorizontalAlignment="Left"/>
-        <RadioButton Content="Basketball" Margin="30, 150" FontSize="20" Foreground="Blue" VerticalAlignment="Top" HorizontalAlignment="Left"/>
-        <RadioButton Content="Basketball" Margin="0, 180" FontSize="20" Foreground="Blue" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+        <Grid>
+            <RadioButton Content="Basketball" FontSize="20" Foreground="Blue" VerticalContentAlignment="Center" 
+                     VerticalAlignment="Top" HorizontalAlignment="Left"/>
+            <RadioButton Content="Basketball" Margin="30" FontSize="20" Foreground="Blue" VerticalContentAlignment="Center" 
+                     VerticalAlignment="Top" HorizontalAlignment="Left"/>
+            <RadioButton Content="Basketball" Margin="60" FontSize="20" Foreground="Blue" VerticalContentAlignment="Center" 
+                     VerticalAlignment="Top" HorizontalAlignment="Left"/>
+            <RadioButton Content="Basketball" Margin="90" FontSize="20" Foreground="Blue" VerticalContentAlignment="Center" 
+                     VerticalAlignment="Top" HorizontalAlignment="Left"/>
+            <RadioButton Content="Basketball" Margin="60, 120" FontSize="20" Foreground="Blue" 
+                     VerticalContentAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+            <RadioButton Content="Basketball" Margin="30, 150" FontSize="20" Foreground="Blue" 
+                     VerticalContentAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+            <RadioButton Content="Basketball" Margin="0, 180" FontSize="20" Foreground="Blue" 
+                     VerticalContentAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+        </Grid>
+        <Grid>
+            <RadioButton Content="Football" Margin="0, 210, 0, 0" FontSize="20" Foreground="Red" VerticalContentAlignment="Center" 
+                     VerticalAlignment="Top" HorizontalAlignment="Left"/>
+            <RadioButton Content="Football" Margin="80, 240, 0, 0" FontSize="20" Foreground="Red" VerticalContentAlignment="Center" 
+                     VerticalAlignment="Top" HorizontalAlignment="Left"/>
+            <RadioButton Content="Football" Margin="160, 270, 0, 0" FontSize="20" Foreground="Red" VerticalContentAlignment="Center" 
+                     VerticalAlignment="Top" HorizontalAlignment="Left"/>
+            <RadioButton Content="Football" Margin="240, 300, 0, 0" FontSize="20" Foreground="Red" VerticalContentAlignment="Center" 
+                     VerticalAlignment="Top" HorizontalAlignment="Left"/>
+            <RadioButton Content="Football" Margin="160, 330, 0, 0" FontSize="20" Foreground="Red" 
+                     VerticalContentAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+            <RadioButton Content="Football" Margin="80, 360, 0, 0" FontSize="20" Foreground="Red" 
+                     VerticalContentAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+            <RadioButton Content="Football" Margin="0, 390, 0, 0" FontSize="20" Foreground="Red" 
+                     VerticalContentAlignment="Center" VerticalAlignment="Top" HorizontalAlignment="Left"/>
+        </Grid>
     </Grid>
 </Window>
