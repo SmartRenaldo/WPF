@@ -7,6 +7,32 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <TextBox HorizontalAlignment="Left" FontSize="24">
+            TextBox Text
+            <TextBox.ToolTip>
+                <TextBlock>Hover Information: biubiubiu~</TextBlock>
+            </TextBox.ToolTip>
+        </TextBox>
 
+        <Button HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0, 50, 0, 0" FontSize="30">
+            <!-- If you want to use ToolTip, you must use it inside ToolTip Attribute -->
+                Awesome Label
+            <Button.ToolTip>
+                <ToolTip>
+                    <Grid>
+                        <TextBlock>Awesome Hint!</TextBlock>
+                        <TextBlock>Button Hint!</TextBlock>
+                        <TextBlock>Will you marry me?</TextBlock>
+                    </Grid>
+                </ToolTip>
+            </Button.ToolTip>
+        </Button>
+
+        <Label HorizontalAlignment="Left" VerticalAlignment="Top" Margin="0, 100, 0, 0" FontSize="30">
+            Legendary Button
+            <Label.ToolTip>
+                <TextBlock>Legendary Hint!</TextBlock>
+            </Label.ToolTip>
+        </Label>
     </Grid>
 </Window>
