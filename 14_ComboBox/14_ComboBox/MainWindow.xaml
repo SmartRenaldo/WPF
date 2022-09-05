@@ -1,0 +1,62 @@
+﻿<Window x:Class="_14_ComboBox.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_14_ComboBox"
+        xmlns:src="clr-namespace:_14_ComboBox"
+        mc:Ignorable="d"
+        Loaded="Window_Loaded"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <!--<StackPanel  Grid.Column="0"
+             Grid.Row="6">
+            <StackPanel.Resources>
+                <src:VacationSpots x:Key="myVacations"/>
+            </StackPanel.Resources>
+            <ComboBox Name="comboBox1"
+            ItemsSource="{StaticResource myVacations}"
+            Text="My Dishes"
+            IsEditable="True"
+            IsReadOnly="False"/>
+
+            <TextBlock Text="{Binding ElementName=comboBox1, Path=SelectedItem}"/>
+        </StackPanel>-->
+
+        <!--<ComboBox Name="comboBox1"
+            Text="My Dishes"
+            IsEditable="True"
+            IsReadOnly="False"
+            Width="80"
+            Height="24"
+            VerticalAlignment="Top">
+            <ComboBoxItem>Item 1</ComboBoxItem>
+            <ComboBoxItem>Item 2</ComboBoxItem>
+            <ComboBoxItem>Item 3</ComboBoxItem>
+            <Label>Gender</Label>
+            <CheckBox>Male</CheckBox>
+            <CheckBox>Female</CheckBox>
+            <CheckBox>X</CheckBox>
+        </ComboBox>-->
+
+        <!--<ComboBox Name="comboBox1"
+            Text="My Dishes"
+            IsEditable="True"
+            IsReadOnly="False"
+            Width="80"
+            Height="24"
+            VerticalAlignment="Top">
+        </ComboBox>-->
+
+        <ComboBox Name="comboBox1"
+            Text="My Dishes"
+            IsEditable="True"
+            IsReadOnly="False"
+            Width="80"
+            Height="24"
+            VerticalAlignment="Top"
+            ItemsSource="{Binding}">
+        </ComboBox>
+        <Button Content="Remove the first item" HorizontalAlignment="Center" Margin="0,57,0,0" VerticalAlignment="Top" Height="36" Width="152" Click="Button_Click"/>
+    </Grid>
+</Window>
