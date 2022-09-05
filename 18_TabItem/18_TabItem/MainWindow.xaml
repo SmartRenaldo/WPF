@@ -1,0 +1,34 @@
+﻿<Window x:Class="_18_TabItem.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_18_TabItem"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <TabControl>
+            <TabItem Header="tab1" FontSize="24">
+                <StackPanel>
+                    <Label>Legendary</Label>
+                    <Label>Awesome</Label>
+                </StackPanel>
+            </TabItem>
+            <TabItem FontSize="24">
+                <TabItem.Header>
+                    <Grid>
+                        <Label>Low Tab2</Label>
+                        <CheckBox IsChecked="False" FontSize="50"/>
+                    </Grid>
+                </TabItem.Header>
+            </TabItem>
+            <TabItem FontSize="24">
+                <TabItem.Header>
+                    <Grid>
+                        <Label>Perfect Tab3</Label>
+                    </Grid>
+                </TabItem.Header>
+            </TabItem>
+        </TabControl>
+    </Grid>
+</Window>
