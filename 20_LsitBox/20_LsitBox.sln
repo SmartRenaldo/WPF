@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.3.32811.315
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "20_LsitBox", "20_LsitBox\20_LsitBox.csproj", "{D787227B-FA79-4975-AEEC-97596182392D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D787227B-FA79-4975-AEEC-97596182392D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{D787227B-FA79-4975-AEEC-97596182392D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{D787227B-FA79-4975-AEEC-97596182392D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{D787227B-FA79-4975-AEEC-97596182392D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {0B72DE1B-AF36-42EE-B85A-47B25F807E4C}
+	EndGlobalSection
+EndGlobal
