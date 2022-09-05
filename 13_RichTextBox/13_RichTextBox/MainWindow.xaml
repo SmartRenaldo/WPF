@@ -1,0 +1,50 @@
+﻿<Window x:Class="_13_RichTextBox.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_13_RichTextBox"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <RichTextBox Name="richTB">
+            <FlowDocument>
+                <Paragraph>
+                    Paragraph 1
+                    <LineBreak/>
+                    The following example declares a RichTextBox that contains a simple FlowDocument.
+                </Paragraph>
+                <Paragraph TextIndent="14">
+                    <Label>Food</Label>
+                    <CheckBox>Lamb</CheckBox>
+                    <Run>Paragraph 2</Run>
+                </Paragraph>
+                <Paragraph>
+                    <Label>Food</Label>
+                    <Run>Paragraph 3</Run>
+                </Paragraph>
+                
+                <BlockUIContainer>
+                    <StackPanel>
+                        <CheckBox>Awesome</CheckBox>
+                        <Label>Food</Label>
+                    </StackPanel>
+                </BlockUIContainer>
+
+                <Paragraph FontSize="60" Margin="0, 0">
+                    <Run>x</Run>
+                    <Label Foreground="Black" FontSize="30" Margin="-15, 0, 0, 10">4</Label>
+                    <Run>+</Run>
+                    <Run>y</Run>
+                    <Label Foreground="Black" FontSize="30" Margin="-15, 0, 0, 10">8</Label>
+                    <Run>=</Run>
+                    <Run>-8 + 9i</Run>
+                </Paragraph>
+
+                <Paragraph FontFamily="50">
+                    <Hyperlink NavigateUri="https://www.google.com" FontSize="48">Google</Hyperlink>
+                </Paragraph>
+            </FlowDocument>
+        </RichTextBox>
+    </Grid>
+</Window>
