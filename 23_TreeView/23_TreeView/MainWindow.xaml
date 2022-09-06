@@ -1,0 +1,38 @@
+﻿<Window x:Class="_23_TreeView.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_23_TreeView"
+        xmlns:e="clr-namespace:_23_TreeView"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800" Loaded="Window_Loaded">
+    <Grid>
+        <!--<TreeView FontSize="30">
+            <TreeViewItem Header="Department">
+                <TreeViewItem Header="Marketing">
+                    <TreeViewItem Header="Marketing 1"></TreeViewItem>
+                    <TreeViewItem Header="Marketing 2"></TreeViewItem>
+                </TreeViewItem>
+                <TreeViewItem Header="Planning" IsExpanded="True">
+                    <TreeViewItem Header="Planning 1"></TreeViewItem>
+                    <TreeViewItem Header="Planning 2"></TreeViewItem>
+                </TreeViewItem>
+                <TreeViewItem Header="Human Resources">
+                    
+                </TreeViewItem>
+            </TreeViewItem>
+        </TreeView>-->
+
+        <TreeView FontSize="30" x:Name="treeView1" ItemsSource="{Binding}">
+            <TreeView.ItemTemplate>
+                <HierarchicalDataTemplate DataType="{x:Type e:MyMenu}" ItemsSource="{Binding SubMenu}">
+                    <StackPanel Orientation="Horizontal" Margin="0, 10">
+                        <Image Source="../icon.png" Width="50" HorizontalAlignment="Left"/>
+                        <TextBlock Text="{Binding Name}"></TextBlock>
+                    </StackPanel>
+                </HierarchicalDataTemplate>
+            </TreeView.ItemTemplate>
+        </TreeView>
+    </Grid>
+</Window>
