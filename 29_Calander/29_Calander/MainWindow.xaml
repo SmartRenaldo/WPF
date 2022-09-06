@@ -1,0 +1,17 @@
+﻿<Window x:Class="_29_Calander.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_29_Calander"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Calendar SelectionMode="None" DisplayDate="2021-05-09" Margin="141,231,-141,-231"></Calendar>
+        <Calendar SelectionMode="MultipleRange" SelectedDate="2022-07-09" Margin="-150,231,150,-231"></Calendar>
+        <Calendar SelectionMode="SingleRange" DisplayDateEnd="2022-03-15" Margin="141,35,-141,-35"></Calendar>
+        <Calendar SelectionMode="SingleDate" Margin="-150,35,150,-36"></Calendar>
+
+        <DatePicker/>
+    </Grid>
+</Window>
