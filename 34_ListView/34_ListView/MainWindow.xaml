@@ -1,0 +1,27 @@
+﻿<Window x:Class="_34_ListView.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:_34_ListView"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <ListView>
+            <ListView.View>
+                <GridView>
+                    <GridViewColumn Header="Id of Patient" DisplayMemberBinding="{Binding Id}" Width="120"/>
+                    <GridViewColumn Header="Name of Patient" Width="120">
+                        <GridViewColumn.CellTemplate>
+                            <DataTemplate>
+                                <Label Content="{Binding Name}" Foreground="DarkMagenta"/>
+                            </DataTemplate>
+                        </GridViewColumn.CellTemplate>
+                    </GridViewColumn>
+                    <GridViewColumn Header="Gender" DisplayMemberBinding="{Binding Gender}" Width="120"/>
+                    <GridViewColumn Header="Hospital Id" DisplayMemberBinding="{Binding HospitalId}" Width="120"/>
+                </GridView>
+            </ListView.View>
+        </ListView>
+    </Grid>
+</Window>
