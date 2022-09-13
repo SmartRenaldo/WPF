@@ -7,7 +7,7 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <ListView>
+        <ListView x:Name="patients">
             <ListView.View>
                 <GridView>
                     <GridViewColumn Header="Id of Patient" DisplayMemberBinding="{Binding Id}" Width="120"/>
